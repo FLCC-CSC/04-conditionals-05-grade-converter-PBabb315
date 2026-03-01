@@ -23,17 +23,17 @@ def grade_converter():
    grade = int(input('Enter the grade (between 0 and 100): '))
 
    if grade >= 101:
-       print('Your grade is an A+')
+       print('A+')
    elif grade >= 90:
-       print('Your grade is a A')
+       print('A')
    elif grade >= 80:
-      print('Your grade is a B')
+      print('B')
    elif grade >= 70:
-       print('Your grade is a C')
+       print('C')
    elif grade >= 65:
-       print('Your grade is an D')
+       print('D')
    else:
-       print('Your grade is an F')
+       print('F')
 main()
     
 
