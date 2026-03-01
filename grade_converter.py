@@ -1,8 +1,8 @@
 # FILE NAME - grade_converter.py
 
-# NAME: 
-# DATE: 
-# BRIEF DESCRIPTION:  
+# NAME: Patrick Babb
+# DATE: 3/1/2026
+# BRIEF DESCRIPTION: creating a grade calculator program 
 
 
 
@@ -14,23 +14,36 @@
 
 
 ########## ENTER YER CODE BELOW THIS LINE ##########
+def main():
+    grade_converter()
 
-print('===== Grade Converter =====')
+def grade_converter():
+   
+   print('===== Grade Converter =====')
+   grade = int(input('Enter the grade (between 0 and 100): '))
 
-percent = int(input('Enter a numerical grade (1-100): '))
+   if grade >= 101:
+       print('Your grade is an A+')
+   elif grade >= 90:
+       print('Your grade is a A')
+   elif grade >= 80:
+      print('Your grade is a B')
+   elif grade >= 70:
+       print('Your grade is a C')
+   elif grade >= 65:
+       print('Your grade is an D')
+   else:
+       print('Your grade is an F')
+main()
+    
 
-if percent > 100:
-    print('A+')
-elif percent >= 90:
-    print('A')
-elif percent >= 80:
-    print('B')
-elif percent >= 70:
-    print('C')
-elif percent >= 65:
-    print('D')
-else:
-    print('F')
+
+
+
+
+
+
+
 
 ########### END YER CODE ABOVE THIS LINE ###########
 
@@ -85,7 +98,8 @@ D
 1. What is something you would tell a future student to be careful about when
    doing this lab?
 
-
+To be very careful of the order they write there if elif else statements to avoid a logic error
+otherwise the computer will take the first right result and ignore the rest of the comparisons
 
 
 
